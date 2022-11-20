@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Raelynne</title>
+</head>
+<body>
+
+  <ul>
+    <li>egoing</li>
+    <li>graphittee</li>
+    <li>lieezche</li>
+  </ul>
+
+  <script type = 'text/javascript'>
+    var grades = {'raelynne' : 10, '12rulru' : 5, 'chunggi' : 8};
+    //객체는 {} 중괄호, 배열은 [] 대괄호
+
+    var grade = new Object();
+    grade['12ulru'] = 23;  //이렇게도 객체 생성 가능
+    
+    grades['12rulru'];
+    // = grades.12rulru;
+    // = grades['12' + 'rulru'];
+
+    var arr = ['a','b','c'];
+    for( var i = 0; i < arr.length; i++)
+    {
+      console.log(arr[i]);
+    }
+
+    for(key in grades)
+    {
+      document.write("key : " + key + " value : " + grades[key] + "<br />");
+    }
+    /*  출력
+    key : raelynne value : 10
+    key : 12rulru value : 5
+    key : chunggi value : 8
+    */
+
+    for(key in grades)
+    {
+      document.write("<li>key : " + key + " value : " + grades[key] + "<br /></li>");
+    }
+
+    //객체지향 프로그래밍(grouping)
+    var score = {
+      'list' : {'rulru' : 10, 'holly' : 80, 'guakamolly' : 30},
+      'show' : function()
+      {
+        for(var name in this.list)
+        {
+          console.log(name, this.list[name]); //여러 개 출력
+        }
+        //consle.log(this.list);
+      }
+    }
+    alert(score['list']['rulru']);
+    alert(score['show']());
+  </script>
+</body>
+</html>

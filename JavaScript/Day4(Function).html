@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Raelynne</title>
+</head>
+<body>
+  <script type = 'text/javascript'>
+    function get_argu(arg1, arg2)  //매개변수(파라미터)
+    {
+      return arg1*10 + arg2;
+    }
+    alert(get_argu(1,2)); //인자(argument)
+    alert(get_argu(2,4)); 
+
+
+    numbering = function()  //이렇게도 쓸 수 있음
+    {
+      i = 0;
+      while(i < 10)
+      {
+        document.write(i);
+        i++;
+      }
+    }
+    numbering();
+
+
+    (function()
+    {
+      i = 0; 
+      while(i < 10)
+      {
+        document.write(i);
+        i++;
+      }
+    })();   //이렇게도 쓸 수 있음(익명함수)
+  </script>
+</body>
+</html>
