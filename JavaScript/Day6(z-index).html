@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .position {
+      width : 180px;
+      height : 50px;
+    }
+    .static {
+      background-color: cornflowerblue;
+      position : static;
+    }
+    .first {
+      background-color: violet;
+      position: fixed;
+      top : 90px;
+      left : 120px;
+    }
+    .last {
+      background-color: orange;
+      position : fixed;
+      top : 180px;
+      left : 120px;
+      z-index : -1;
+    }
+  </style>
+</head>
+<body>
+  <h1>changing the number by using the z-index</h1>
+  <div>
+    <div class = "static position">static position</div>
+    <div class = "first position">fixed position</div>
+  </div><br><br>
+  <div>
+    <div class = "static position">static position</div>
+    <div class = "last position">fixed position</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div.static {
+      background-color: lightblue;
+      position : static;
+    }
+    div.relative {
+      background-color:  lightcoral;
+      position : relative;
+      left : 30px;
+    }
+    div.absolute {
+      background-color: darkolivegreen;
+			width: 200px;
+			height: 100px;
+      position : absolute;
+      top : 50px;
+      left : 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>relative posisiton example</h1>
+  <div class = "static">this is for 'static'</div>
+  <div class = "relative">this is for 'relative'
+    <div class = "absolute">this is for 'absolute' related relative</div>
+  </div>
+  <div class = "absolute">this is for 'absolute'</div>
+</body>
+</html>
